@@ -11,8 +11,8 @@
         "cropfield"
     ],
     "support": {
-        "docs": "???",
-        "issues": "???"
+        "docs": "https://github.com/onedarnleyroad/craft-cropfield",
+        "issues": "https://github.com/onedarnleyroad/craft-cropfield/issues"
     },
     "license": "MIT",
     "authors": [
