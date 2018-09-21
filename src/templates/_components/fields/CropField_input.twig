@@ -1,0 +1,55 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * cropfield plugin for Craft CMS 3.x
+ *
+ * CropField Field Input
+ *
+ * @author    One Darnley Road
+ * @copyright Copyright (c) 2018 One Darnley Road
+ * @link      https://onedarnleyroad.com
+ * @package   Cropfield
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+
+
+{% spaceless %}
+<div class="cropfield" id="{{ name }}">
+	<div class="cropfield__row">
+		<input class="cropfield__input" type="radio" name="{{ name }}" id="{{ name ~ '-left-top' }}" value="left-top" {{ value == 'left-top' ? 'checked' }}>
+		<label class="cropfield__label cropfield__label--left-top" for="{{ name ~ '-left-top' }}">Left Top</label>
+
+		<input class="cropfield__input" type="radio" name="{{ name }}" id="{{ name ~ '-top' }}" value="top" {{ value == 'top' ? 'checked' }}>
+		<label class="cropfield__label cropfield__label--top" for="{{ name ~ '-top' }}">Center Top</label>
+
+		<input class="cropfield__input" type="radio" name="{{ name }}" id="{{ name ~ '-right-top' }}" value="right-top" {{ value == 'right-top' ? 'checked' }}>
+		<label class="cropfield__label cropfield__label--right-top" for="{{ name ~ '-right-top' }}">Right Top</label>
+	</div>
+
+	<div class="cropfield__row">
+		<input class="cropfield__input" type="radio" name="{{ name }}" id="{{ name ~ '-left' }}" value="left" {{ value == 'left' ? 'checked' }}>
+		<label class="cropfield__label cropfield__label--left" for="{{ name ~ '-left' }}">Left Center</label>
+
+		<input class="cropfield__input" type="radio" name="{{ name }}" id="{{ name ~ '-center' }}" value="center" {{ value == 'center' ? 'checked' }}>
+		<label class="cropfield__label cropfield__label--center" for="{{ name ~ '-center' }}">Center Center</label>
+
+		<input class="cropfield__input" type="radio" name="{{ name }}" id="{{ name ~ '-right' }}" value="right" {{ value == 'right' ? 'checked' }}>
+		<label class="cropfield__label cropfield__label--right" for="{{ name ~ '-right' }}">Right Center</label>
+	</div>
+
+	<div class="cropfield__row">
+		<input class="cropfield__input" type="radio" name="{{ name }}" id="{{ name ~ '-left-bottom' }}" value="left-bottom" {{ value == 'left-bottom' ? 'checked' }}>
+		<label class="cropfield__label cropfield__label--left-bottom" for="{{ name ~ '-left-bottom' }}">Left Bottom</label>
+
+		<input class="cropfield__input" type="radio" name="{{ name }}" id="{{ name ~ '-bottom' }}" value="bottom" {{ value == 'bottom' ? 'checked' }}>
+		<label class="cropfield__label cropfield__label--bottom" for="{{ name ~ '-bottom' }}">Center Bottom </label>
+
+		<input class="cropfield__input" type="radio" name="{{ name }}" id="{{ name ~ '-right-bottom' }}" value="right-bottom" {{ value == 'right-bottom' ? 'checked' }}>
+		<label class="cropfield__label cropfield__label--right-bottom" for="{{ name ~ '-right-bottom' }}">Right Bottom</label>
+	</div>
+</div>
+{% endspaceless %}

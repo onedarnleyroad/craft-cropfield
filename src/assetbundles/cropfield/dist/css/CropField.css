@@ -1,0 +1,45 @@
+/**
+ * cropfield plugin for Craft CMS
+ *
+ * CropField Field CSS
+ *
+ * @author    One Darnley Road
+ * @copyright Copyright (c) 2018 One Darnley Road
+ * @link      https://onedarnleyroad.com
+ * @package   Cropfield
+ * @since     1.0.0
+ */
+
+ .cropfield__row {
+	overflow: hidden;
+	min-width: 70px;
+	min-width: calc(66px + .9em);
+}
+.cropfield__input {
+   display: none;
+}
+
+.cropfield__label {
+   float: left;
+   margin-right: .3em;
+   margin-bottom: .3em;
+   border: 1px solid rgba(0, 0, 0, .2);
+   border-radius: 2px;
+   width: 20px;
+   height: 20px;
+   text-indent: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   cursor: pointer;
+
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+
+}
+
+.cropfield__input:checked + .cropfield__label {
+   background-color: rgba(0, 0, 0, .3);
+   border-radius: 100%;
+}

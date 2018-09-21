@@ -1,0 +1,43 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * cropfield plugin for Craft CMS
+ *
+ * CropField Field Settings
+ *
+ * @author    One Darnley Road
+ * @copyright Copyright (c) 2018 One Darnley Road
+ * @link      https://onedarnleyroad.com
+ * @package   Cropfield
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("onedarnleyroad\\cropfield\\assetbundles\\cropfield\\CropfieldAsset") %}
+
+{# {{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'initialCrop',
+    name: 'initialCrop',
+    value: field['initialCrop']})
+}} #}
+
+
+<div>
+  <input type="radio" name="initialCrop" value="left-top" {{ field['initialCrop'] == 'left-top' ? 'checked' }}>
+  <input type="radio" name="initialCrop" value="top" {{ field['initialCrop'] == 'top' ? 'checked' }}>
+  <input type="radio" name="initialCrop" value="right-top" {{ field['initialCrop'] == 'right-top' ? 'checked' }}>
+</div>
+<div>
+  <input type="radio" name="initialCrop" value="left" {{ field['initialCrop'] == 'left' ? 'checked' }}>
+  <input type="radio" name="initialCrop" value="center" {{ field['initialCrop'] == 'center' ? 'checked' }}>
+  <input type="radio" name="initialCrop" value="right" {{ field['initialCrop'] == 'right' ? 'checked' }}>
+</div>
+<div>
+  <input type="radio" name="initialCrop" value="left-bottom" {{ field['initialCrop'] == 'left-bottom' ? 'checked' }}>
+  <input type="radio" name="initialCrop" value="bottom" {{ field['initialCrop'] == 'bottom' ? 'checked' }}>
+  <input type="radio" name="initialCrop" value="right-bottom" {{ field['initialCrop'] == 'right-bottom' ? 'checked' }}>
+</div>

@@ -1,0 +1,40 @@
+{
+    "name": "onedarnleyroad/cropfield",
+    "description": "Cropfield migrated for Craft 3",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "cropfield"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "One Darnley Road",
+            "homepage": "https://onedarnleyroad.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "onedarnleyroad\\cropfield\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "cropfield",
+        "handle": "cropfield",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "???",
+        "class": "onedarnleyroad\\cropfield\\Cropfield"
+    }
+}
